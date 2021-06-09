@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():	
-	return render_template('index.html')
+	return "<h1>Hello</h1>"
 
 @app.route('/showFiles',methods=["POST","GET"])
 def fileNames():
