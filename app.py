@@ -35,7 +35,7 @@ def details():
 	roomnumber = float(roomnumber)
 	for items in data:
 		room = 0
-		if(items[4]!="" and items[2]!=" "):
+		if(items[2]!="" and items[2]!=" "):
 			room = float(items[2])
 			people.append(items)
     return render_template('names.html',roomnumber=roomnumber, dict=people)
