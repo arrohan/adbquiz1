@@ -1,8 +1,8 @@
 <html>
 <body>  
     
-    <h1 style="text-align: center;">Details of {{roomnumber}}</h1>  
-    {% for item in dict%}
+    <h1 style="text-align: center;">Details of {{room}}</h1>  
+    {% for item in peop%}
            <img style="width: 200px;height:200px;margin-left: 20%;" src="{{ url_for('static', filename=item[4]) }}" alt="No Image found"/>
            <br>
            <label style="margin-left: 20%;">Name:     </label> 

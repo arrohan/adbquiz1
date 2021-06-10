@@ -26,16 +26,4 @@ def show_names():
     path=os.getcwd()
     path=path+"/static"
     files=os.listdir(path)
-    return render_template('names.html',fn=files)
-
-@app.route('/details', methods=["POST","GET"])
-def details():
-	people = []
-	roomnumber = request.form.get("roomnumber")
-	roomnumber = float(roomnumber)
-	for items in data:
-		room = 0
-		if(items[2]!="" and items[2]!=" "):
-			room = float(items[2])
-			people.append(items)
-    return render_template('names.html',roomnumber=roomnumber, dict=people)
+	return render_template('names.html',fn=files)
