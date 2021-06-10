@@ -10,6 +10,12 @@
             <input type="submit" id="button" style="margin-left: 10%;width: 10%;" value="Show All Files"/>
         </form>
 
+        <form action="/details", mehtod="POST" , mehtod = "GET">
+            <label>Enter Name:</label>
+            <input type="text" name="roomnumber">
+            <input type="submit" value="Search">
+        </form>
+
         {% for items in fn %}
         <label>{{items}}</label>
         <br>
