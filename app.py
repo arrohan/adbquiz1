@@ -19,4 +19,4 @@ def show_names():
     path=os.getcwd()
     path=path+"/static"
     files=os.listdir(path)
-    return render_template('index.html',fn=files)
+    return render_template('names.html',fn=files)
