@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div class="row" style="">
+                <h2>Adithya Lakshman Kulkarni</h2>
+                <h2>1001827757</h2>
+            </div>
+        </div>
+
+        <form action="/names", method="POST" , method = "GET">
+            <input type="submit" id="button" style="margin-left: 10%;width: 10%;" value="Show Names"/>
+        </form>
+
+        {% for items in fn %}
+        <label>{{items}}</label>
+        <br>
+        {% endfor %}
+    </body>
+</html>
